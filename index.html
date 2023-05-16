@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intento.css">
+    <script src="https://kit.fontawesome.com/55e770b0f3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+    <header class="barra">
+        <div class="inicio">
+            <div class="inicio uno">
+                <img src="imagenes/codoacodo.png" alt="Codo a Codo" id="logo">
+                <p>Conf Bs As</p>
+            </div>
+            <div class="inicio dos">
+                <label for="clickBurguer" class="clickBurguer">
+                    <img src="imagenes/burguer.svg" alt="menu" class="imgBurguer">
+                </label>
+            </div>
+        </div>
+        <input type="checkbox" id="clickBurguer" class="inputBurguer">
+        <div class="menu">
+            <a href="#primero">La conferencia</a>
+            <a href="#segundo">Los oradores</a>
+            <a href="#tercero">El lugar y la fecha</a>
+            <a href="#cuarto">Conviertete en orador</a>
+            <a href="#" id="comprarTicekts">Comprar tickets</a>
+        </div>
+    </header>
+    <div class="first">
+        <div class="contentCarousel">
+            <div class="itemCarousel">
+                <div class="tarjetaCarousel" id="tarjeta-1">
+                     <img src="imagenes/ba1.jpg" alt="">
+                </div>
+                <div class="flechasCarousel">
+                    <a href="#tarjeta-3">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#tarjeta-2">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarousel">
+                <div class="tarjetaCarousel" id="tarjeta-2">
+                     <img src="imagenes/ba2.jpg" alt="">
+                </div>
+                <div class="flechasCarousel">
+                    <a href="#tarjeta-1">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#tarjeta-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarousel">
+                <div class="tarjetaCarousel" id="tarjeta-3">
+                     <img src="imagenes/ba3.jpg" alt="">
+                </div>
+                <div class="flechasCarousel">
+                    <a href="#tarjeta-2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                   <a href="#tarjeta-1">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="primero">
+            <p class="title">Conf Bs As</p>
+            <p class="content">
+                Bs As llega por primera vez a Argentina. Un evento para compartir con <br>
+                nuestra comunidad el conocimiento y experiencia de los expertos que <br>
+                que estan creando el futuro de internet. Ven a conocer a miembros del <br>
+                evento, a otros estudiantes de Codo a Codo y los oradores de primer <br>
+                nivel que tenemos para ti. Te esperamos!
+            </p>
+            <input type="button" value="Quiero ser orador" id="orador">
+            <input type="button" value="Comprar tickets" id="tickets">
+        </div>
+    </div>
+    <div id="segundo">
+        <div class="parrafo">
+            <p class="know">Conoce a los</p>
+            <p class="speakers">Oradores</p>
+        </div>
+        <div class="jobs">
+            <img src="imagenes/steve.jpg" alt="Steve Jobs">
+            <div class="espaciado">
+                <span class="JS">JavaScript</span>
+                <span class="React">React</span>
+                <span class="genio">Steve Jobs</span>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum nostrum laborum explicabo,
+                   tempora reiciendis consequuntur ab atque repellat odio obcaecati nam sint alias ut labore quia at
+                   voluptate
+                </p>
+            </div>
+        </div>
+        <div class="Gates">
+            <img src="imagenes/bill.jpg" alt="Bill Gates">
+            <div class="espaciado">
+                <span class="JS">JavaScript</span>
+                <span class="React">React</span>
+                <span class="genio">Bill Gates</span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum nostrum laborum explicabo,
+                    tempora reiciendis consequuntur ab atque repellat odio obcaecati nam sint alias ut labore quia at
+                    voluptate
+                </p>
+            </div>
+        </div>
+        <div class="ada">
+            <img src="imagenes/ada.jpeg" alt="Ada Lovelace">
+            <div class="espaciado">
+                <span class="negocios">Negocios</span>
+                <span class="startups">Startups</span>
+                <span class="genio">Ada Lovelace</span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum nostrum laborum explicabo,
+                    tempora reiciendis consequuntur ab atque repellat odio obcaecati nam sint alias ut labore quia at
+                    voluptate
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="tercero">
+        <div class="imagenHonolulu">
+            <img src="imagenes/honolulu.jpg" alt="honolulu">
+        </div>
+        <div class="textoTercero">
+            <h2>Bs As - Octubre</h2>
+            <p>
+                Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos.
+                Honolulu es las mas sureña entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
+                se refiere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu
+                han formado una ciudad-condado consolidada que cubre toda la ciudad (Aproximadamente 600 km<sup>2</sup>
+                de superficie).
+            </p>
+            <input type="button" value="Conocé más">
+        </div>
+    </div>
+    <div id="cuarto">
+        <p class="conviertete">Conviertete en un</p>
+        <p class="orador">orador</p>
+        <p class="anotate">Anotate como orador para dar un charla ignite. Cuentanos de que quieres hablar!</p>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <textarea name="" id="textarea" cols="30" rows="10" placeholder="Sobre que quieres hablar?"></textarea>
+            <p class="recuerda">Recuerda incluir un titulo para tu charla</p>
+            <input type="submit" id="enviar">
+        </form>
+    </div>
+    <footer>
+        <ul>
+            <li class="pie"><a href="#">Preguntas frecuentes</a></li>
+            <li class="pie"><a href="#">Contactanos</a></li>
+            <li class="pie"><a href="#">Prensa</a></li>
+            <li class="pie"><a href="#">Conferencias</a></li>
+            <li class="pie"><a href="#">Terminos y condiciones</a></li>
+            <li class="pie"><a href="#">Privacidad</a></li>
+            <li class="pie"><a href="#">Estudiantes</a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>

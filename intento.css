@@ -1,0 +1,470 @@
+.contenedor{
+    width: 100%;
+    max-width: 2048px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(6, auto);
+}
+*{
+    font-family: Roboto, arial;
+}
+body{
+    position: relative;
+}
+#logo {
+    width: 30%;
+    min-width: 50px;
+    display: inline-block;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+header{
+    background-color: rgb(67, 66, 66);
+    height: 100%;
+    max-height: 100px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+header a {
+    color: rgb(174, 168, 168);
+    padding: 15px;
+    text-decoration: none;
+}
+header p {
+    color: white;
+    font-size: 22px;
+    display: inline-block;
+}
+#comprarTicekts{
+    color: green;
+}
+#comprarTicekts:hover{
+    color: rgb(174, 168, 168);
+    background-color: rgb(3, 83, 3);
+    border-radius: 10%;
+    cursor: pointer;
+}
+.inputBurguer, .clickBurguer{
+    display: none;
+}
+header a:hover {
+    color: white;
+    cursor: pointer;
+}
+.barra .burguer{
+    display: flex;
+    color: white;
+}
+.contentCarousel{
+    height: 500px;
+    overflow: hidden;
+}
+.itemCarousel{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.tarjetaCarousel{
+    height: 100%;
+    width: 100%;
+}
+.flechasCarousel{
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10%;
+    box-sizing: border-box;
+}
+#tarjeta-1{
+    background-color: rgb(74, 143, 161);
+}
+#tarjeta-2{
+    background-color: rgb(60, 48, 222);
+}
+#tarjeta-3{
+    background-color: rgb(30, 23, 126);
+}
+.flechasCarousel a{
+    text-decoration: none;
+}
+.flechasCarousel i{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 50%;
+    padding: 300%;
+}
+.itemCarousel img{
+    height: 100%;
+    width: 100%;
+}
+#primero{
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    color: white;
+    text-align: right;
+    margin-top: 10%;
+    padding-right: 11%;
+    width: 100%;
+    height: 110%;
+    
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+#primero .title{
+    font-size: 230%;
+    font-weight: 600;
+}
+#primero .content{
+    font-size: 130%;
+}
+#orador{
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+#orador:hover{
+    color: gray;
+    background-color: white;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#tickets{
+    background: rgb(68, 159, 68);
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+#tickets:hover{
+    background-color: rgb(2, 82, 2);
+    border-color: green;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#segundo{
+    display: grid;
+    margin: 7% 15%;
+    grid-gap: 2.5%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: (2, auto);
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+#segundo img{
+    width: 100%;
+    height: 60%;
+}
+#segundo .parrafo{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+}
+#segundo .know{
+    text-transform: uppercase;
+    font-size: 65%;
+    margin: 0%;
+}
+#segundo .speakers{
+    text-transform: uppercase;
+    font-size: 195%;
+    font-weight: bold;
+    margin: 0;
+}
+#segundo .jobs{
+    border: 1px solid;
+    border-color: rgb(146, 154, 154);
+    border-radius: 5px;
+
+}
+#segundo .Gates{
+    border: 1px solid;
+    border-color: rgb(146, 154, 154);
+    border-radius: 5px;
+    
+}
+#segundo .ada{
+    border: 1px solid;
+    border-color: rgb(146, 154, 154);
+    border-radius: 5px;
+    
+}
+#segundo .React{
+    display: inline;
+    border-radius: 10%;
+    background-color: rgb(62, 153, 245);
+    color: white;
+    font-size: 65%;
+    padding: 2%;
+    font-weight: bold;
+}
+#segundo .JS{
+    display: inline;
+    border-radius: 10%;
+    background-color: rgb(243, 190, 57);
+    font-size: 65%;
+    padding: 2%;
+    font-weight: bold;
+}
+#segundo .startups{
+    display: inline;
+    border-radius: 10%;
+    background-color: rgb(180, 51, 103);
+    color: white;
+    font-size: 65%;
+    padding: 2%;
+    font-weight: bold;
+}
+#segundo .negocios{
+    display: inline;
+    border-radius: 10%;
+    background-color: rgb(100, 98, 99);
+    color: white;
+    font-size: 65%;
+    padding: 2%;
+    font-weight: bold;
+}
+#segundo .genio{
+    font-size: 130%;
+    font-weight: bold;
+    padding-top: 2%;
+    display: block;
+}
+#segundo .espaciado{
+    padding: 5%;
+    box-sizing: border-box;
+}
+#tercero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    border: 1px;
+    border-color: rgb(58, 57, 57);
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+#tercero img{
+    height: 100%;
+    width: 100%;
+}
+#tercero .textoTercero{
+    padding: 15px;
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
+#tercero input{
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    padding: 10px
+}
+#tercero input:hover{
+    color: gray;
+    background-color: white;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#cuarto{
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: (2, auto);
+    margin: 1% 25%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+#textarea{
+    resize: none;
+    padding: 1%;
+    width: 100%;
+    height: 20%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+form  input{
+    display: inline;
+    width: 46%;
+    margin: 1%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.conviertete{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80%;
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+.orador{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 0%;
+}
+.anotate{
+    text-align: center;
+    margin-bottom: 0%;
+    font-size: 80%;
+}
+.recuerda{
+    color: #8f8c8c;
+    font-size: 80%;
+    margin-top: 1%;
+}
+#enviar{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    background-color: rgb(111, 169, 74);
+    margin-left: 0%;
+}
+#enviar:hover{
+    background-color: green;
+    cursor: pointer;
+}
+footer{
+    max-height: max-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(34, 69, 122);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    box-sizing: border-box;
+    
+}
+footer ul{
+    width: 100%;
+    list-style-type: none;
+    align-items: center;
+}
+.pie{
+    padding: 0;
+    list-style-type: none;
+    width: fit-content;
+    display: inline;
+    align-self: center;
+    flex-wrap: wrap;
+    margin: 0;
+    border: none;
+    
+}
+footer a {
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity: 0.5;
+}
+@media (max-width: 768px){
+    #tercero{
+    grid-template-columns: 1fr;
+    margin-top: 30%;
+    }
+    #segundo{
+        grid-template-columns: 1fr;
+        margin-top: 20%;
+    }
+    form  input{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 2% 0%;
+    }
+    #textarea{
+        margin-top: 2%;
+    }
+    .clickBurguer{
+        display: flex;
+        cursor: pointer;
+    }
+    .inicio{
+        width: 100%;
+        display: flex
+    }
+    .inicio .uno{
+        display: flex;
+        justify-content: start;
+        padding-left: 10%;
+    }
+    .inicio .dos{
+        display: flex;
+        justify-content: end;
+        padding-right: 10%;
+    }
+    header{
+        display: flex;
+    }
+    .menu{
+        --state-menu: translate(120%);
+
+
+        position: fixed;
+        top: 13%;
+        bottom: 5%;
+        background-color: rgba(67, 66, 66, 0.968);
+        width: 45%;
+        left: 55%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 5%;
+        box-sizing: border-box;
+        transition: 0.2s ease-in-out;
+    }
+    .menu:target{
+        --state-menu: translate(0);
+    }
+    header a:hover {
+        color: white;
+        cursor: pointer;
+    }
+    #comprarTicekts:hover{
+        color: rgb(174, 168, 168);
+        background-color: rgb(3, 83, 3);
+        border-radius: 10%;
+        cursor: pointer;
+    }
+    #clickBurguer:checked + .menu{
+        transform: var(--state-menu);
+    }
+}
