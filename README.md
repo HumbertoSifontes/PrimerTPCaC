@@ -8,5 +8,5 @@ I did it using only HTML and CSS (no JavaScript nor library)
 </p>
 
 <h4 align="center">
-  :construction: Proyecto en construcción :construction:
+  :construction: Under Construction :construction:
 </h4>
